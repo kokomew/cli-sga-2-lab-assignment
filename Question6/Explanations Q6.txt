@@ -1,0 +1,26 @@
+touch input.txt
+This creates a new file input.txt where I wrote some sample text to test the script.
+
+nano input.txt
+This opens input.txt so I can add sample words for analysis.
+
+touch metrics.sh
+This creates an empty shell script file to write the metrics analysis code.
+
+chmod +x metrics.sh
+This makes the metrics.sh script executable.
+
+nano metrics.sh
+This opens the script file where I wrote the logic to find longest, shortest, average word length, and total unique words.
+
+./metrics.sh input.txt
+I ran the script with a valid file. The script calculated the longest word, shortest word, average word length, and number of unique words.
+
+./metrics.sh
+I ran the script without an argument. The script showed an error because it needs exactly one input file.
+
+./metrics.sh fake.txt
+I ran the script with a non-existing file. The script showed an error indicating the file does not exist.
+
+cp metrics.sh input.txt /mnt/c/Users/mehvi/Documents/
+This copies both the script and the input file to the Windows Documents folder so they can be uploaded to GitHub.

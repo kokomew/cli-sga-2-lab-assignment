@@ -1,0 +1,20 @@
+touch input.txt
+nano input.txt
+
+touch metrics.sh
+chmod +x metrics.sh
+nano metrics.sh
+
+./metrics.sh input.txt
+Longest word: orange
+Shortest word: kiwi
+Average word length: 5.28
+Total unique words: 5
+
+./metrics.sh
+Error: Please provide exactly one input file.
+
+./metrics.sh fake.txt
+Error: File does not exist.
+
+cp metrics.sh input.txt /mnt/c/Users/mehvi/Documents/
