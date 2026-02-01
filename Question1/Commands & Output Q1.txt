@@ -1,0 +1,18 @@
+touch analyze.sh
+chmod +x analyze.sh
+nano analyze.sh
+
+./analyze.sh user_info.txt
+File analysis of user_info.txt:
+ 1  4 32 user_info.txt
+
+./analyze.sh ~/project_documents
+Directory analysis of /home/mehvish/project_documents:
+Total files: 2
+.txt files: 2
+
+./analyze.sh
+Error: Please provide exactly one argument (file or directory).
+
+./analyze.sh fake.txt
+Error: Path does not exist.

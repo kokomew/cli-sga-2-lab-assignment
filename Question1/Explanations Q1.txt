@@ -1,0 +1,20 @@
+touch analyze.sh
+This creates a new empty file named analyze.sh where I will write the shell script.
+
+chmod +x analyze.sh
+This makes the analyze.sh script executable so I can run it.
+
+nano analyze.sh
+This opens the file in a text editor where I wrote the shell script code.
+
+./analyze.sh user_info.txt
+I ran the script with a file as input. The script displayed the number of lines, words, and characters in the file.
+
+./analyze.sh ~/project_documents
+I ran the script with a directory as input. The script counted all files and the number of .txt files inside the directory.
+
+./analyze.sh
+I ran the script without any argument. The script showed an error because it needs exactly one argument.
+
+./analyze.sh fake.txt
+I ran the script with a non-existing path. The script showed an error indicating the path does not exist.
