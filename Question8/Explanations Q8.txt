@@ -1,0 +1,34 @@
+mkdir test_dir
+Created a new directory named test_dir where I will put some test files.
+
+touch test_dir/file1.txt
+touch test_dir/file2.txt
+touch test_dir/file3.txt
+Created three empty text files inside test_dir to test moving files.
+
+touch bg_move.sh
+Created a new file for the shell script.
+
+chmod +x bg_move.sh
+Made the script executable so I can run it.
+
+nano bg_move.sh
+Opened the script in a text editor to write the code for moving files into backup.
+
+./bg_move.sh test_dir
+Ran the script with test_dir as input. It moved each file into a backup/ subdirectory in the background and displayed the PID of each background process. After all moves finished, it confirmed completion.
+
+ls test_dir/backup
+Checked the backup/ folder to confirm all files were moved successfully.
+
+./bg_move.sh
+Ran the script without an argument. Script showed an error because it requires exactly one directory.
+
+./bg_move.sh fake_dir
+Ran the script with a non-existing directory. Script showed an error because the directory does not exist.
+
+cp bg_move.sh /mnt/c/Users/mehvi/Documents/
+Copied the script to the Documents folder in Windows to prepare for GitHub upload.
+
+cp test_dir /mnt/c/Users/mehvi/Documents/   # use -r if you want to copy directory
+Copied the test_dir directory and its contents to Windows. The -r option is needed because it’s a folder.

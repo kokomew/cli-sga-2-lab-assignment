@@ -1,0 +1,25 @@
+mkdir test_dir
+touch test_dir/file1.txt
+touch test_dir/file2.txt
+touch test_dir/file3.txt
+
+touch bg_move.sh
+chmod +x bg_move.sh
+nano bg_move.sh
+
+./bg_move.sh test_dir
+Moving file1.txt to backup/ in background. PID: 1314
+Moving file2.txt to backup/ in background. PID: 1316
+Moving file3.txt to backup/ in background. PID: 1318
+All background processes finished.
+
+ls test_dir/backup
+file1.txt  file2.txt  file3.txt
+
+./bg_move.sh
+Error: Please provide exactly one directory.
+
+./bg_move.sh fake_dir
+Error: Directory does not exist.
+
+cp bg_move.sh /mnt/c/Users/mehvi/Documents/
