@@ -1,0 +1,23 @@
+touch emails.txt
+This command creates a file named emails.txt to store the email addresses.
+
+nano emails.txt
+This opens the file where sample email addresses were entered.
+
+touch emailcleaner.sh
+This creates a shell script file for cleaning email addresses.
+
+chmod +x emailcleaner.sh
+This makes the script executable so it can be run.
+
+nano emailcleaner.sh
+This opens the script file where the logic for validating emails was written.
+
+./emailcleaner.sh
+This runs the script, which separates valid and invalid email addresses.
+
+cat valid.txt
+This displays all valid email addresses extracted from the file, with duplicates removed.
+
+cat invalid.txt
+This displays email addresses that do not match the valid format.

@@ -1,0 +1,18 @@
+touch emails.txt
+nano emails.txt
+
+touch emailcleaner.sh
+chmod +x emailcleaner.sh
+nano emailcleaner.sh
+
+./emailcleaner.sh
+Email cleaning completed.
+
+cat valid.txt
+123@numbers.com
+hello@abc.com
+test123@gmail.com
+
+cat invalid.txt
+wrong@email
+user@site.org
