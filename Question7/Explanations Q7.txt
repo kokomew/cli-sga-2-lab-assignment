@@ -1,0 +1,26 @@
+nano words.txt
+I edited the file to include words like AI, IOU, sky, fly, cat, dog, apple, orange, art for testing the script.
+
+chmod +x patterns.sh
+Made the patterns.sh script executable.
+
+./patterns.sh words.txt
+Ran the script with the input file. It created vowels.txt, consonants.txt, and mixed.txt based on word patterns.
+
+cat vowels.txt
+Checked the vowels.txt file. It contains words with only vowels: AI, IOU.
+
+cat consonants.txt
+Checked the consonants.txt file. It contains words with only consonants: sky, fly, cat, dog.
+
+cat mixed.txt
+Checked the mixed.txt file. It contains words that start with a consonant and have vowels: apple, orange, art.
+
+./patterns.sh
+Ran the script without any arguments. It showed an error asking for exactly one input file.
+
+./patterns.sh fake.txt
+Ran the script with a non-existing file. It showed an error indicating the file does not exist.
+
+cp patterns.sh words.txt vowels.txt consonants.txt mixed.txt /mnt/c/Users/mehvi/Documents/
+Copied the script and all output files to the Windows Documents folder to upload to GitHub.

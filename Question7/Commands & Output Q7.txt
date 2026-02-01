@@ -1,0 +1,28 @@
+nano words.txt
+
+chmod +x patterns.sh
+
+./patterns.sh words.txt
+Email cleaning completed.
+
+cat vowels.txt
+AI
+IOU
+
+cat consonants.txt
+sky
+fly
+cat
+dog
+
+cat mixed.txt
+apple
+orange
+art
+
+./patterns.sh
+Error: Please provide exactly one input file.
+
+./patterns.sh fake.txt
+Error: File does not exist.
+
