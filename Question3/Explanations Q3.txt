@@ -1,0 +1,23 @@
+touch process_text.sh
+This creates a new shell script file named process_text.sh.
+
+chmod +x process_text.sh
+This makes the script executable so it can be run from the terminal.
+
+nano process_text.sh
+This opens the script file in the editor to write the shell script code.
+
+touch data.txt
+This creates a text file that will be used as input for the script.
+
+nano data.txt
+This opens the text file and sample text was added for analysis.
+
+./process_text.sh data.txt
+I ran the script with a valid file. The script displayed the number of lines, words, and characters in the file.
+
+./process_text.sh
+I ran the script without any argument. The script showed an error message because one argument is required.
+
+./process_text.sh fake.txt
+I ran the script with a file that does not exist. The script displayed an appropriate error message.

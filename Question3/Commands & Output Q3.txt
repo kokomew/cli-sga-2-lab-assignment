@@ -1,0 +1,16 @@
+touch process_text.sh
+chmod +x process_text.sh
+nano process_text.sh
+
+touch data.txt
+nano data.txt
+
+./process_text.sh data.txt
+File analysis of data.txt:
+ 4 14 81 data.txt
+
+./process_text.sh
+Error: Please provide exactly one file.
+
+./process_text.sh fake.txt
+Error: File does not exist.

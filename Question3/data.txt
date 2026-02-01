@@ -1,0 +1,4 @@
+Linux is an operating system.
+Shell scripting is useful.
+This is a sample file.
+
