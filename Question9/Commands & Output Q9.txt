@@ -1,0 +1,16 @@
+touch zombie_demo.c
+nano zombie_demo.c
+gcc zombie_demo.c -o zombie_demo
+./zombie_demo
+Child 1 running. PID: 1842
+Child 2 running. PID: 1843
+Cleaning up child with PID: 1842
+Cleaning up child with PID: 1843
+All child processes cleaned up. No zombies remain.
+
+./zombie_demo fake_input
+Child 1 running. PID: 1845
+Child 2 running. PID: 1846
+Cleaning up child with PID: 1845
+Cleaning up child with PID: 1846
+All child processes cleaned up. No zombies remain.

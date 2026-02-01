@@ -1,0 +1,14 @@
+touch zombie_demo.c
+This creates an empty C file named zombie_demo.c where I wrote the code to demonstrate zombie processes.
+
+nano zombie_demo.c
+This opens the file in a text editor where I wrote the C code.
+
+gcc zombie_demo.c -o zombie_demo
+This compiles the C code into an executable named zombie_demo using GCC.
+
+./zombie_demo
+I ran the compiled program. It created two child processes. The program then cleaned up the child processes, ensuring no zombies remained.
+
+./zombie_demo fake_input
+I ran the program with an extra argument (even though it doesn’t need it). The program still executed correctly, created two child processes, and cleaned them up without leaving zombies.
