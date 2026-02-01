@@ -1,0 +1,25 @@
+mkdir dirA dirB
+
+echo "hello world" > dirA/file1.txt
+echo "same content" > dirA/file2.txt
+echo "same content" > dirB/file2.txt
+echo "only in B" > dirB/file3.txt
+
+touch sync.sh
+chmod +x sync.sh
+nano sync.sh
+
+./sync.sh dirA dirB
+Files only in dirA:
+file1.txt
+
+Files only in dirB:
+file3.txt
+
+Common files comparison:
+file2.txt: Contents match
+
+./sync.sh dirA
+Error: Please provide two directories.
+
+cp sync.sh /mnt/c/Users/mehvi/Documents/

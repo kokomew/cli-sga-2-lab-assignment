@@ -1,0 +1,26 @@
+mkdir dirA dirB
+This creates two directories, dirA and dirB, to hold sample files for comparison.
+
+echo "hello world" > dirA/file1.txt
+echo "same content" > dirA/file2.txt
+echo "same content" > dirB/file2.txt
+echo "only in B" > dirB/file3.txt
+These commands create sample text files in dirA and dirB. Some files are unique to each directory and some are common with the same content.
+
+touch sync.sh
+This creates an empty shell script file for comparing directories.
+
+chmod +x sync.sh
+This makes the script executable.
+
+nano sync.sh
+This opens the script file where the directory comparison logic is written.
+
+./sync.sh dirA dirB
+This runs the script on the two directories. It shows files only in dirA, files only in dirB, and checks whether common files have matching content.
+
+./sync.sh dirA
+This runs the script with only one argument. It shows an error because the script requires exactly two directories.
+
+cp sync.sh /mnt/c/Users/mehvi/Documents/
+This copies the script to the Windows Documents folder so it can be uploaded to GitHub.
