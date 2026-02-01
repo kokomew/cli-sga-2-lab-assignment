@@ -1,0 +1,23 @@
+touch log_analyzer.sh
+This creates a new empty file named log_analyzer.sh where I wrote the shell script.
+
+chmod +x log_analyzer.sh
+This makes the log_analyzer.sh script executable.
+
+nano log_analyzer.sh
+This opens the script file in a text editor where I wrote the code.
+
+touch log.txt
+This creates a log file used as input for the script.
+
+nano log.txt
+This opens the log file where sample log entries were added.
+
+./log_analyzer.sh log.txt
+I ran the script with a valid log file. The script counted total entries, INFO, WARNING, and ERROR messages, and displayed the most recent ERROR.
+
+./log_analyzer.sh
+I ran the script without providing a log file. The script displayed an error because exactly one argument is required.
+
+./log_analyzer.sh fake.txt
+I ran the script with a non-existing file. The script displayed an error indicating the file does not exist.

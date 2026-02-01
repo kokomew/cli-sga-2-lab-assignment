@@ -1,0 +1,19 @@
+touch log_analyzer.sh
+chmod +x log_analyzer.sh
+nano log_analyzer.sh
+
+touch log.txt
+nano log.txt
+
+./log_analyzer.sh log.txt
+Total entries: 7
+INFO messages: 1
+WARNING messages: 1
+ERROR messages: 2
+Most recent ERROR: 2025-01-12 10:17:10 ERROR Network timeout
+
+./log_analyzer.sh
+Error: Please provide exactly one log file.
+
+./log_analyzer.sh fake.txt
+Error: File does not exist.
