@@ -1,0 +1,21 @@
+touch process_logs.sh
+chmod +x process_logs.sh
+nano process_logs.sh
+
+touch server.log
+nano server.log
+
+./process_logs.sh server.log
+Total entries: 10
+INFO messages: 4
+WARNING messages: 3
+ERROR messages: 3
+Most recent ERROR: 2026-01-31 18:45:22 ERROR Connection failed
+
+./process_logs.sh
+Error: Please provide exactly one log file.
+
+./process_logs.sh fake.log
+Error: File does not exist.
+
+cp process_logs.sh server.log /mnt/c/Users/mehvi/Documents/

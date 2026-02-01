@@ -1,0 +1,26 @@
+touch process_logs.sh
+This creates a new empty file named process_logs.sh where the shell script will be written.
+
+chmod +x process_logs.sh
+This makes the process_logs.sh script executable so it can be run.
+
+nano process_logs.sh
+This opens the file in a text editor to write the script that analyzes a log file.
+
+touch server.log
+This creates an empty log file named server.log for testing the script.
+
+nano server.log
+This opens server.log in a text editor where sample log entries are added.
+
+./process_logs.sh server.log
+The script is run with server.log as input. It counts total lines, INFO, WARNING, and ERROR messages, and shows the most recent ERROR.
+
+./process_logs.sh
+The script is run without arguments. It displays an error because exactly one log file argument is required.
+
+./process_logs.sh fake.log
+The script is run with a non-existent file. It displays an error indicating the file does not exist.
+
+cp process_logs.sh server.log /mnt/c/Users/mehvi/Documents/
+Copies the script and log file to Windows Documents so they can be uploaded.
